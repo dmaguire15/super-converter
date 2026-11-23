@@ -24,7 +24,7 @@ void Install()
     string exePath = Environment.ProcessPath;
 
     using RegistryKey menuKey = Registry.CurrentUser.CreateSubKey(MenuKeyPath);
-    menuKey.SetValue("", "Option test");
+    menuKey.SetValue("", "Test Option!");
     menuKey.SetValue("Icon", exePath);
 
     using RegistryKey commandKey = menuKey.CreateSubKey("command");
